@@ -68,12 +68,10 @@ body:
   - type: textarea
     id: resolution
     attributes:
-      label: DeepEnd Resolution
+      label: Detailed Explanation
       description: Will be rendered in Markdown, allowing you to utilize its styling.
       value: |
-        # Detailed Explanation
-        
-        Should be written in Markdown and should be standalone document as much as possible.
+        Should be written in Markdown and should be a standalone document as much as possible.
         Links can be used but sparingly.
 
         ## Budget / Proposal Fund
