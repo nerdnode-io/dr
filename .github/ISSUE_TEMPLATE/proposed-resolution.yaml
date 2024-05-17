@@ -18,8 +18,8 @@ body:
         required: true
   - type: checkboxes
     attributes:
-      label: Have you discussed this in the [Discord](https://discord.gg/ZTbq3JEXkf) yet?
-      description: Not required but getting additional discussion on your Resolution is recommended.
+      label: Have you discussed this in the Discord yet?
+      description: Not required but getting additional discussion on your Resolution is recommended. [Discord](https://discord.gg/ZTbq3JEXkf)
       options:
       - label: I have discussed this Resolution in the Discord
         required: false
