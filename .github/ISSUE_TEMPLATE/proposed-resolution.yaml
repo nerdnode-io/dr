@@ -1,0 +1,94 @@
+name: Proposed Resolution
+description: Suggest a Resolution for the DeepEnd Network
+title: "[DR]: "
+labels: ["resolution"]
+assignees:
+  - anthonyra
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to make DeepEnd better!
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists including closed issues.
+      options:
+      - label: I have searched the existing issues
+        required: true
+  - type: checkboxes
+    attributes:
+      label: Have you discussed this in the [Discord](https://discord.gg/ZTbq3JEXkf) yet?
+      description: Not required but getting additional discussion on your Resolution is recommended.
+      options:
+      - label: I have discussed this Resolution in the Discord
+        required: false
+  - type: input
+    id: discord-link
+    attributes:
+      label: Discord Link
+      description: Please provide a Message Link to the Discord discussion or thread.
+      placeholder: ex. https://discord.com/channels/1009533970771349554/1011331602174988379/1011359420137095268
+    validations:
+      required: false
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: dropdown
+    id: change-type
+    attributes:
+      label: Select the type of change?
+      description: |
+        All resolutions should try to fall under only one change type as much as possible. 
+        If it doesn't, changing the scope or size of Resolution is recommend.
+      multiple: true
+      options:
+        - Blockchain Configuration
+        - Smart Contract
+        - Architecture
+        - Infrastructure
+        - New Feature
+        - Tokenomics
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why does DeepEnd need this Resolution?
+      placeholder: |
+        Is there an issue it's trying to solve?
+        Is it a feature that'll make DeepEnd better?
+        Who will benefit from this?
+      value: "What's the motivation for this Resolution?"
+  - type: textarea
+    id: resolution
+    attributes:
+      label: DeepEnd Resolution
+      value: |
+        # Detailed Explanation
+        
+        Should be written in Markdown and should be standalone document as much as possible.
+        Links can be used but sparingly.
+
+        ## Budget / Proposal Fund
+
+        It all takes effort and money, explain how you propose to get your proposal completed.
+        Also list the sources you envision this coming from.
+
+        ## Timeline
+        
+        How long would it take to implement? Does it require Core Team contribution to estimation?
+
+        ## Alternatives
+
+        Are they any alternatives to this Resolution. Including implementation, development, or scope?
+
+        ## Implementation Plan
+
+        Is there development and resources set aside to develop and implement the Resolution?
+        IF so list responsible parties here.
+      render: markdown
