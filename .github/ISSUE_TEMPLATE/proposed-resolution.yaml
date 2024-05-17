@@ -44,8 +44,9 @@ body:
     attributes:
       label: Select the type of change?
       description: |
-        All resolutions should try to fall under only one change type as much as possible. 
-        If it doesn't, changing the scope or size of Resolution is recommend.
+        All resolutions should only consist of one type of change. 
+        If it doesn't, changing the scope or size of Resolution is recommended.
+        Provide a reason in the Resolution below if it's not possible.
       multiple: true
       options:
         - Blockchain Configuration
@@ -68,6 +69,7 @@ body:
     id: resolution
     attributes:
       label: DeepEnd Resolution
+      description: Will be rendered in Markdown, allowing you to utilize its styling.
       value: |
         # Detailed Explanation
         
@@ -91,4 +93,3 @@ body:
 
         Is there development and resources set aside to develop and implement the Resolution?
         IF so list responsible parties here.
-      render: markdown
