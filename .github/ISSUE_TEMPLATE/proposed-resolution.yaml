@@ -19,9 +19,9 @@ body:
   - type: checkboxes
     attributes:
       label: Have you discussed this in the Discord yet?
-      description: Not required but getting additional discussion on your Resolution is recommended. [Discord](https://discord.gg/ZTbq3JEXkf)
+      description: Not required but getting additional discussion on your Resolution is recommended.
       options:
-      - label: I have discussed this Resolution in the Discord
+      - label: I have discussed this Resolution in the [Discord](https://discord.gg/ZTbq3JEXkf)
         required: false
   - type: input
     id: discord-link
